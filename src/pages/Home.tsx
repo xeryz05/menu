@@ -179,10 +179,10 @@ export default function Home({ targetSection }: HomeProps) {
                   <header className="flex flex-col gap-2">
                     <p className="text-sm sm:text-base text-muted-foreground">Pilih perusahaan</p>
                     <h1 className="hand-drawn-title text-4xl sm:text-5xl md:text-6xl leading-[0.95]">
-                      <span className="ink-underline">Pilih Brand</span>
+                      <span className="ink-underline">Select Company</span>
                     </h1>
                     <p className="text-base sm:text-lg text-foreground/80 max-w-[60ch]">
-                      Menu-nya sama. Yang beda cuma background suasana.
+                      silahkan pilih salah satu.
                     </p>
                   </header>
 
@@ -212,9 +212,6 @@ export default function Home({ targetSection }: HomeProps) {
                         <h2 className="hand-drawn-title text-2xl sm:text-3xl leading-none">
                           Prasetia Dwidharma
                         </h2>
-                        <p className="mt-2 text-sm sm:text-base text-foreground/75 max-w-[44ch]">
-                          Nuansa merah–hitam–putih, jaringan & tower.
-                        </p>
                         <div className="mt-4 text-xs sm:text-sm text-muted-foreground">pilih</div>
                       </div>
                     </motion.button>
@@ -242,16 +239,12 @@ export default function Home({ targetSection }: HomeProps) {
 
                       <div className="relative">
                         <h2 className="hand-drawn-title text-2xl sm:text-3xl leading-none">Verdanco</h2>
-                        <p className="mt-2 text-sm sm:text-base text-foreground/75 max-w-[44ch]">
-                          Nuansa kuning–hitam, pertambangan.
-                        </p>
                         <div className="mt-4 text-xs sm:text-sm text-muted-foreground">pilih</div>
                       </div>
                     </motion.button>
                   </div>
 
                   <footer className="mt-7 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-                    <p className="text-sm text-muted-foreground">Pilihan brand disimpan otomatis.</p>
                     <button
                       type="button"
                       onClick={() => toast.success("Siap!", { description: "Tema hand-drawn sudah aktif." })}
