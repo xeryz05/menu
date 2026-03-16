@@ -179,10 +179,10 @@ export default function Home({ targetSection }: HomeProps) {
                   <header className="flex flex-col gap-2">
                     <p className="text-sm sm:text-base text-muted-foreground">Pilih perusahaan</p>
                     <h1 className="hand-drawn-title text-4xl sm:text-5xl md:text-6xl leading-[0.95]">
-                      <span className="ink-underline">Select Company</span>
+                      <span className="ink-underline">Pilih Perusahaan</span>
                     </h1>
                     <p className="text-base sm:text-lg text-foreground/80 max-w-[60ch]">
-                      silahkan pilih salah satu.
+                      Silahkan memilih salah satu.
                     </p>
                   </header>
 
@@ -273,14 +273,14 @@ export default function Home({ targetSection }: HomeProps) {
                 <div className="relative">
                   <div className="absolute -top-10 left-0 right-0 flex items-center justify-between gap-3 px-2">
                     <div className="text-sm text-foreground/75">
-                      Brand: <span className="font-semibold">{brandLabel}</span>
+                      Perusahaan: <span className="font-semibold">{brandLabel}</span>
                     </div>
                     <button
                       type="button"
                       onClick={resetBrand}
-                      className="text-sm underline underline-offset-4 decoration-accent hover:decoration-primary"
+                      className="text-sm underline underline-offset-4 decoration-accent hover:decoration-primary font-semibold"
                     >
-                      Ganti brand
+                      Ganti Perusahaan
                     </button>
                   </div>
 
@@ -353,14 +353,7 @@ export default function Home({ targetSection }: HomeProps) {
                           </div>
 
                           <footer className="mt-7 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-                            <p className="text-sm text-muted-foreground">Tip: nanti sub-menu bisa diarahkan ke halaman lain.</p>
-                            <button
-                              type="button"
-                              onClick={() => toast.success("Siap!", { description: "Tema hand-drawn sudah aktif." })}
-                              className="text-sm underline underline-offset-4 decoration-accent hover:decoration-primary w-fit"
-                            >
-                              Cek tema
-                            </button>
+                            <p className="text-sm text-muted-foreground">Note: web ini masih dalam pengembangan dev.</p>
                           </footer>
                         </div>
 
